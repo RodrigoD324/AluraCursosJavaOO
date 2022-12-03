@@ -1,3 +1,7 @@
+package teste;
+
+import modelo.*;
+
 public class TesteTributaveis {
 
 	public static void main(String[] args) {

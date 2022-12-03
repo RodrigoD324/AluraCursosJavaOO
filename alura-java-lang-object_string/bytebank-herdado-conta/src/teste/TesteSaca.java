@@ -1,3 +1,7 @@
+package teste;
+
+import modelo.*;
+
 public class TesteSaca {
 
 	public static void main(String[] args) {
