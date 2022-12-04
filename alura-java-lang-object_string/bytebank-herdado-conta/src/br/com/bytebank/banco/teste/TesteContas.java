@@ -1,6 +1,6 @@
-package teste;
+package br.com.bytebank.banco.teste;
 
-import modelo.*;
+import br.com.bytebank.banco.modelo.*;
 
 public class TesteContas {
 
