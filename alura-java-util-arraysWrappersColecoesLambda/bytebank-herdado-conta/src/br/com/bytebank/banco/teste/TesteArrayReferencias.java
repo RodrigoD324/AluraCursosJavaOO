@@ -14,7 +14,7 @@ public class TesteArrayReferencias {
 		ContaCorrente cc2 = new ContaCorrente(22, 22);
 		contas[1] = cc2;
 		
-		//System.out.println(cc2.getNumero());
+		///System.out.println(cc2.getNumero());
 		System.out.println(contas[1].getNumero());
 		
 		ContaCorrente ref = contas[1];
