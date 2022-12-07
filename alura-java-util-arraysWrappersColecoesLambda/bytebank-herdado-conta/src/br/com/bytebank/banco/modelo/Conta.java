@@ -94,9 +94,7 @@ public abstract class Conta {
 
 	@Override
 	public boolean equals(Object ref) {
-		
 		Conta outra = (Conta) ref;
-		
 		if (this.agencia != outra.agencia) {
 			return false;
 		}
