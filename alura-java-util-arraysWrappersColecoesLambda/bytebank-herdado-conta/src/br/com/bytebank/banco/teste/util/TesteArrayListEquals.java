@@ -32,6 +32,8 @@ public class TesteArrayListEquals {
 		for(Conta conta : lista) {
 			System.out.println(conta);
 		}
+		
+		
 	}
 
 }
