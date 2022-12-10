@@ -1,28 +1,29 @@
 package br.com.alura.java.io.teste;
 
-import java.io.BufferedWriter;
-import java.io.FileOutputStream;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class TesteLeitura {
 
 	public static void main(String[] args) throws IOException {
 
 		// Fluxo de entrada com arquivo
-		OutputStream fos = new FileOutputStream("lorem2.txt");
-		Writer osw = new OutputStreamWriter(fos);
-		BufferedWriter bw = new BufferedWriter(osw);
+		InputStream fis = new FileInputStream("lorem.txt");
+		Reader isr = new InputStreamReader(fis);
+		BufferedReader br = new BufferedReader(isr);
 
-		bw.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
-		bw.newLine();
-		bw.newLine();
-		bw.write("efioejfiwejfiewjfiwef");
-		
-		
-		bw.close();
+		String linha = br.readLine();
+
+		while (linha != null) {
+			System.out.println(linha);
+			linha = br.readLine();
+		}
+
+		br.close();
 
 	}
 
