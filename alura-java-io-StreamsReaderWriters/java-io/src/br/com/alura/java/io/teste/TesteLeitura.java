@@ -13,7 +13,7 @@ public class TesteLeitura {
 
 		// Fluxo de entrada com arquivo
 		InputStream fis = new FileInputStream("lorem.txt");
-		Reader isr = new InputStreamReader(fis);
+		Reader isr = new InputStreamReader(fis, "windows-1252");
 		BufferedReader br = new BufferedReader(isr);
 
 		String linha = br.readLine();
