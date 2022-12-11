@@ -18,8 +18,8 @@ public class TesteSerializacao {
 		cc.setTitular(cliente);
 		cc.deposita(222.3);
 		
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("cliente.bin"));
-		oos.writeObject(cliente);
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("cc.bin"));
+		oos.writeObject(cc);
 		oos.close();
 	}
 
