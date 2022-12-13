@@ -1,6 +1,7 @@
 package br.com.alura;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestandoListas {
 
@@ -37,6 +38,12 @@ public class TestandoListas {
 			System.out.println("Percorrendo: ");
 			System.out.println("Aula: " + aula);
 		});
+		
+		aulas.add("Aumentando nosso conhecimento");
+		System.out.println(aulas);
+		Collections.sort(aulas);
+		System.out.println(aulas);
+		
 
 	}
 
