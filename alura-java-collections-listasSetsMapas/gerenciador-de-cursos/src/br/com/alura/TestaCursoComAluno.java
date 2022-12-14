@@ -2,7 +2,6 @@ package br.com.alura;
 
 import java.util.Iterator;
 import java.util.Set;
-import java.util.Vector;
 
 public class TestaCursoComAluno {
 
@@ -27,8 +26,7 @@ public class TestaCursoComAluno {
 		Set<Aluno> alunos = javaColecoes.getAlunos();
 		Iterator<Aluno> iterador = alunos.iterator();
 		while(iterador.hasNext()) {
-			Aluno proximo = iterador.next();
-			System.out.println(proximo);
+			System.out.println(iterador.next());
 		}
 		
 		System.out.println("O aluno " + a1 + " esta matriculado?");
