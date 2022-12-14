@@ -33,6 +33,9 @@ public class TestaCursoComAluno {
 		System.out.println("O a1 e equals ao Silva?");
 		System.out.println(a1.equals(silva));
 		
+		// obrigatoriamente o seguinte é true:
+		
+		System.out.println(a1.hashCode() == silva.hashCode());
 		
 		
 	}
