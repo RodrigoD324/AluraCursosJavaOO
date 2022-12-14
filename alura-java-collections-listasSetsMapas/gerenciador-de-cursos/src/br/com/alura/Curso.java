@@ -5,13 +5,14 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 public class Curso {
 
 	private String nome;
 	private String instrutor;
 	private List<Aula> aulas = new LinkedList<Aula>();
-	private Collection<Aluno> alunos = new HashSet<>();
+	private Set<Aluno> alunos = new HashSet<>();
 	
 	public Curso(String nome, String instrutor) {
 		this.nome = nome;
@@ -47,8 +48,8 @@ public class Curso {
 		this.alunos.add(aluno);
 	}
 	
-	public Collection<Aluno> getAlunos() {
-		return Collections.unmodifiableCollection(alunos);
+	public Set<Aluno> getAlunos() {
+		return Collections.unmodifiableSet(alunos);
 	}
 
 	public boolean estaMatriculado(Aluno aluno) {

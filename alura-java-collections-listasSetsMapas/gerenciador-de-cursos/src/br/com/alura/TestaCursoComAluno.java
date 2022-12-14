@@ -1,5 +1,9 @@
 package br.com.alura;
 
+import java.util.Iterator;
+import java.util.Set;
+import java.util.Vector;
+
 public class TestaCursoComAluno {
 
 	public static void main(String[] args) {
@@ -19,9 +23,13 @@ public class TestaCursoComAluno {
 		javaColecoes.matricula(a3);
 		
 		System.out.println("Todos os alunos matriculados: ");
-		javaColecoes.getAlunos().forEach(a -> {
-			System.out.println(a);
-		});
+		
+		Set<Aluno> alunos = javaColecoes.getAlunos();
+		Iterator<Aluno> iterador = alunos.iterator();
+		while(iterador.hasNext()) {
+			Aluno proximo = iterador.next();
+			System.out.println(proximo);
+		}
 		
 		System.out.println("O aluno " + a1 + " esta matriculado?");
 		System.out.println(javaColecoes.estaMatriculado(a1));
@@ -36,7 +44,6 @@ public class TestaCursoComAluno {
 		// obrigatoriamente o seguinte é true:
 		
 		System.out.println(a1.hashCode() == silva.hashCode());
-		
 		
 	}
 
