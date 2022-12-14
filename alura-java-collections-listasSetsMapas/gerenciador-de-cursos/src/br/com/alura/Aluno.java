@@ -1,5 +1,7 @@
 package br.com.alura;
 
+import java.util.Collection;
+
 public class Aluno {
 
 	private String nome;
