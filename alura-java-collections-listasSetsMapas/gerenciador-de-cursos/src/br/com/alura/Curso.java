@@ -50,4 +50,8 @@ public class Curso {
 	public Collection<Aluno> getAlunos() {
 		return Collections.unmodifiableCollection(alunos);
 	}
+
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
+	}
 }
